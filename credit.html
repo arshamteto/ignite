@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MTA San Andreas Server</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(circle at top, #0f2027, #000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00fff7;
+  overflow: hidden;
+}
+
+.background-glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: #00fff7;
+  filter: blur(200px);
+  opacity: 0.15;
+}
+
+.card {
+  position: relative;
+  background: rgba(0,0,0,0.7);
+  border-radius: 20px;
+  padding: 40px 50px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(0,255,247,0.4);
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+.ip-box {
+  border: 2px solid #00fff7;
+  padding: 15px 20px;
+  border-radius: 12px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  box-shadow: inset 0 0 15px rgba(0,255,247,0.4);
+}
+
+.footer {
+  margin-top: 25px;
+  font-size: 12px;
+  color: #777;
+}
+</style>
+    <style>
+        /* From Uiverse.io by SelfMadeSystem */ 
+.frutiger-button {
+  cursor: pointer;
+  position: relative;
+  padding: 2px;
+  border-radius: 6px;
+  border: 0;
+  text-shadow: 1px 1px #000a;
+  background: linear-gradient(#006caa, #00c3ff);
+  box-shadow: 0px 4px 6px 0px #0008;
+  transition: 0.3s all;
+}
+
+.frutiger-button:hover {
+  box-shadow: 0px 6px 12px 0px #0009;
+}
+
+.frutiger-button:active {
+  box-shadow: 0px 0px 0px 0px #0000;
+}
+
+.inner {
+  position: relative;
+  inset: 0px;
+  padding: 1em;
+  border-radius: 4px;
+  background: radial-gradient(circle at 50% 100%, #30f8f8 10%, #30f8f800 55%),
+    linear-gradient(#00526a, #009dcd);
+  overflow: hidden;
+  transition: inherit;
+}
+
+.inner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-65deg, #0000 40%, #fff7 50%, #0000 70%);
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  animation: thing 3s ease infinite;
+}
+
+@keyframes thing {
+  0% {
+    background-position: 130%;
+    opacity: 1;
+  }
+
+  to {
+    background-position: -166%;
+    opacity: 0;
+  }
+}
+
+.top-white {
+  position: absolute;
+  border-radius: inherit;
+  inset: 0;
+  background: radial-gradient();
+  transition: inherit;
+}
+
+.inner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  transition: inherit;
+  box-shadow: inset 0px 2px 8px -2px #0000;
+}
+
+.frutiger-button:active .inner::after {
+  box-shadow: inset 0px 2px 8px -2px #000a;
+}
+
+.text {
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-weight: 650;
+  transition: inherit;
+}
+
+
+.button1 {
+  background: linear-gradient(135deg, #00fff7, #007cff);
+  border: none;
+  padding: 14px 35px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #000;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.button1:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px #00fff7;
+}
+    </style>
+</head>
+
+<body>
+
+<div class="background-glow"></div>
+
+<div class="card">
+    <div class="logo">Credit's</div>
+  <br>
+  <div class="text">zombiboi</div>
+  <div class="text">arshamteto</div>
+  <BR></BR>
+  <button class="button1"><a href="index.html" style="text-decoration: none; color: white;">back</a></button>
+</div>
+
+</body>
+</html>
